@@ -3,34 +3,34 @@ import { Mail, Linkedin, Github, Phone } from "lucide-react";
 
 export function Contact() {
   const socialLinks = [
-    { 
-      icon: Github, 
-      label: "GitHub", 
+    {
+      icon: Github,
+      label: "GitHub",
       href: "https://github.com/ansh603",
       username: "@ansh603"
     },
-    { 
-      icon: Linkedin, 
-      label: "LinkedIn", 
+    {
+      icon: Linkedin,
+      label: "LinkedIn",
       href: "https://linkedin.com/in/ghanshyam-batane-9a586a297",
       username: "Ghanshyam Batane"
     },
-    { 
-      icon: Mail, 
-      label: "Email", 
+    {
+      icon: Mail,
+      label: "Email",
       href: "mailto:ghanshyambatane19@gmail.com",
       username: "ghanshyambatane19@gmail.com"
     },
-    { 
-      icon: Phone, 
-      label: "Phone", 
+    {
+      icon: Phone,
+      label: "Phone",
       href: "tel:+916268249253",
       username: "+91 6268249253"
     }
   ];
 
   return (
-    <section id="contact" className="py-32 px-6 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <section id="contact" className="py-32 px-6 bg-gradient-to-br from-black via-slate-950 to-black">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -42,9 +42,9 @@ export function Contact() {
           <h2 className="text-4xl md:text-5xl mb-4 text-white font-light tracking-tight">
             Let's Connect
           </h2>
-          <div className="w-16 h-0.5 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto mb-6"></div>
+          <div className="w-16 h-0.5 bg-gradient-to-r from-emerald-400 to-cyan-400 mx-auto mb-6"></div>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            I'm always interested in hearing about new projects and opportunities. 
+            I'm always interested in hearing about new projects and opportunities.
             Feel free to reach out!
           </p>
         </motion.div>
@@ -61,19 +61,19 @@ export function Contact() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ y: -4 }}
-              className="group flex items-center gap-4 p-6 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl hover:bg-white/10 hover:border-white/20 transition-all duration-300"
+              className="group flex items-center gap-4 p-6 bg-slate-900/60 backdrop-blur-sm border border-emerald-500/20 rounded-2xl hover:bg-slate-800/70 hover:border-emerald-400/40 transition-all duration-300"
             >
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-500 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                 <link.icon className="w-6 h-6 text-white" />
               </div>
               <div className="flex-1 text-left">
                 <h3 className="text-white font-medium mb-1">{link.label}</h3>
                 <p className="text-gray-400 text-sm">{link.username}</p>
               </div>
-              <svg 
-                className="w-5 h-5 text-gray-400 group-hover:text-white group-hover:translate-x-1 transition-all duration-300" 
-                fill="none" 
-                viewBox="0 0 24 24" 
+              <svg
+                className="w-5 h-5 text-gray-400 group-hover:text-white group-hover:translate-x-1 transition-all duration-300"
+                fill="none"
+                viewBox="0 0 24 24"
                 stroke="currentColor"
               >
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

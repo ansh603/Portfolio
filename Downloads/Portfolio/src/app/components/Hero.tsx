@@ -3,10 +3,10 @@ import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-950 via-gray-950 to-zinc-950">
       {/* Subtle animated gradient orbs */}
       <motion.div
-        className="absolute top-0 left-0 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-40"
+        className="absolute top-0 left-0 w-96 h-96 bg-emerald-500 rounded-full mix-blend-multiply filter blur-3xl opacity-40"
         animate={{
           x: [0, 100, 0],
           y: [0, 50, 0],
@@ -44,9 +44,9 @@ export function Hero() {
             initial={{ scale: 0.5, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
-            className="relative inline-flex items-center justify-center w-24 h-24 mb-8 rounded-full bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 shadow-2xl shadow-purple-500/50"
+            className="relative inline-flex items-center justify-center w-24 h-24 mb-8 rounded-full bg-gradient-to-br from-emerald-500 via-teal-500 to-cyan-500 shadow-2xl shadow-emerald-500/50"
           >
-            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 blur-xl opacity-50 animate-pulse"></div>
+            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-emerald-500 via-teal-500 to-cyan-500 blur-xl opacity-50 animate-pulse"></div>
             <span className="relative text-5xl font-bold text-white">G</span>
           </motion.div>
 
@@ -57,14 +57,14 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
-            <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 bg-clip-text text-transparent">
               Ghanshyam Batane
             </span>
           </motion.h1>
 
           {/* Gradient Accent Line */}
           <motion.div
-            className="h-1 w-24 mx-auto mb-8 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/50"
+            className="h-1 w-24 mx-auto mb-8 rounded-full bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 shadow-lg shadow-emerald-500/50"
             initial={{ width: 0, opacity: 0 }}
             animate={{ width: 96, opacity: 1 }}
             transition={{ delay: 0.6, duration: 1 }}
@@ -72,7 +72,7 @@ export function Hero() {
 
           {/* Role with Typing Effect */}
           <motion.p
-            className="text-xl md:text-2xl text-slate-800 mb-6 font-semibold"
+            className="text-xl md:text-2xl text-gray-100 mb-6 font-semibold"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.8 }}
@@ -81,7 +81,7 @@ export function Hero() {
           </motion.p>
 
           <motion.p
-            className="text-base md:text-lg text-slate-700 mb-12 max-w-2xl mx-auto leading-relaxed"
+            className="text-base md:text-lg text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1, duration: 0.8 }}
@@ -99,9 +99,9 @@ export function Hero() {
           >
             <motion.a
               href="#projects"
-              whileHover={{ scale: 1.02, boxShadow: "0 10px 40px -10px rgba(139, 92, 246, 0.6)" }}
+              whileHover={{ scale: 1.02, boxShadow: "0 10px 40px -10px rgba(16, 185, 129, 0.6)" }}
               whileTap={{ scale: 0.98 }}
-              className="group relative px-8 py-3.5 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white rounded-full overflow-hidden transition-all duration-300 font-semibold shadow-xl shadow-purple-500/40"
+              className="group relative px-8 py-3.5 bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 text-white rounded-full overflow-hidden transition-all duration-300 font-semibold shadow-xl shadow-emerald-500/40"
             >
               <span className="relative z-10 flex items-center gap-2">
                 View Projects
@@ -112,9 +112,9 @@ export function Hero() {
             </motion.a>
             <motion.a
               href="#contact"
-              whileHover={{ scale: 1.02, borderColor: "rgba(139, 92, 246, 0.8)" }}
+              whileHover={{ scale: 1.02, borderColor: "rgba(16, 185, 129, 0.8)" }}
               whileTap={{ scale: 0.98 }}
-              className="px-8 py-3.5 border-2 border-purple-400 text-slate-800 rounded-full backdrop-blur-sm hover:bg-purple-100 transition-all duration-300 font-semibold"
+              className="px-8 py-3.5 border-2 border-emerald-400 text-gray-100 rounded-full backdrop-blur-sm hover:bg-emerald-900/50 transition-all duration-300 font-semibold"
             >
               Get In Touch
             </motion.a>
@@ -132,23 +132,23 @@ export function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ y: -2 }}
-              className="w-10 h-10 rounded-full bg-white border border-purple-200 flex items-center justify-center hover:bg-purple-50 hover:border-purple-300 transition-all duration-300 shadow-md"
+              className="w-10 h-10 rounded-full bg-slate-800 border border-emerald-500/30 flex items-center justify-center hover:bg-slate-700 hover:border-emerald-400 transition-all duration-300 shadow-md"
             >
-              <Github className="w-5 h-5 text-slate-700" />
+              <Github className="w-5 h-5 text-gray-300" />
             </motion.a>
             <motion.a
               href="https://linkedin.com/in/ghanshyam-batane-9a586a297"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ y: -2 }}
-              className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-white/10 hover:border-white/20 transition-all duration-300"
+              className="w-10 h-10 rounded-full bg-slate-800 border border-emerald-500/30 flex items-center justify-center hover:bg-slate-700 hover:border-emerald-400 transition-all duration-300"
             >
               <Linkedin className="w-5 h-5 text-gray-300" />
             </motion.a>
             <motion.a
               href="mailto:ghanshyambatane19@gmail.com"
               whileHover={{ y: -2 }}
-              className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-white/10 hover:border-white/20 transition-all duration-300"
+              className="w-10 h-10 rounded-full bg-slate-800 border border-emerald-500/30 flex items-center justify-center hover:bg-slate-700 hover:border-emerald-400 transition-all duration-300"
             >
               <Mail className="w-5 h-5 text-gray-300" />
             </motion.a>
@@ -167,8 +167,8 @@ export function Hero() {
             transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
             className="flex flex-col items-center gap-2"
           >
-            <span className="text-xs text-slate-500 uppercase tracking-wider font-medium">Scroll</span>
-            <ArrowDown className="text-slate-500 w-4 h-4" />
+            <span className="text-xs text-gray-400 uppercase tracking-wider font-medium">Scroll</span>
+            <ArrowDown className="text-gray-400 w-4 h-4" />
           </motion.div>
         </motion.div>
       </div>

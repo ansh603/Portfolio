@@ -42,7 +42,7 @@ export function Experience() {
   ];
 
   return (
-    <section id="experience" className="py-20 px-6 bg-white">
+    <section id="experience" className="py-20 px-6 bg-gradient-to-b from-slate-950 via-gray-900 to-slate-950">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -50,14 +50,14 @@ export function Experience() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl md:text-5xl text-center mb-4 text-gray-900">
+          <h2 className="text-4xl md:text-5xl text-center mb-4 text-gray-100">
             Experience & Education
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-12"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-emerald-500 to-cyan-500 mx-auto mb-12"></div>
         </motion.div>
 
         <div className="relative">
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 to-purple-600"></div>
+          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-emerald-500 to-cyan-500"></div>
 
           {experiences.map((exp, index) => (
             <motion.div
@@ -68,7 +68,7 @@ export function Experience() {
               transition={{ duration: 0.6, delay: index * 0.2 }}
               className="relative pl-20 pb-12"
             >
-              <div className="absolute left-4 w-9 h-9 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
+              <div className="absolute left-4 w-9 h-9 rounded-full bg-gradient-to-br from-emerald-500 to-cyan-500 flex items-center justify-center">
                 {exp.type === "work" ? (
                   <Briefcase className="w-5 h-5 text-white" />
                 ) : (
@@ -76,20 +76,20 @@ export function Experience() {
                 )}
               </div>
 
-              <div className="bg-gradient-to-br from-gray-50 to-gray-100 p-6 rounded-xl hover:shadow-lg transition-shadow">
+              <div className="bg-slate-800/50 backdrop-blur-sm p-6 rounded-xl hover:shadow-lg transition-shadow border border-emerald-500/20">
                 <div className="flex flex-wrap justify-between items-start mb-2">
-                  <h3 className="text-2xl text-gray-900">{exp.title}</h3>
-                  <span className="text-sm text-purple-600 bg-purple-100 px-3 py-1 rounded-full">
+                  <h3 className="text-2xl text-gray-100">{exp.title}</h3>
+                  <span className="text-sm text-emerald-400 bg-emerald-900/30 px-3 py-1 rounded-full border border-emerald-500/30">
                     {exp.period}
                   </span>
                 </div>
-                <p className="text-lg text-gray-600 mb-3">{exp.company}</p>
-                <p className="text-gray-700 mb-4">{exp.description}</p>
+                <p className="text-lg text-gray-300 mb-3">{exp.company}</p>
+                <p className="text-gray-400 mb-4">{exp.description}</p>
                 <ul className="space-y-2">
                   {exp.achievements.map((achievement, idx) => (
                     <li key={idx} className="flex items-start">
-                      <span className="text-purple-600 mr-2">•</span>
-                      <span className="text-gray-600">{achievement}</span>
+                      <span className="text-emerald-400 mr-2">•</span>
+                      <span className="text-gray-300">{achievement}</span>
                     </li>
                   ))}
                 </ul>

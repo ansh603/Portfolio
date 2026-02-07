@@ -30,10 +30,10 @@ export function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-32 px-6 bg-gradient-to-b from-pink-50/50 via-white to-indigo-50/50 relative overflow-hidden">
+    <section id="projects" className="py-32 px-6 bg-gradient-to-b from-gray-950 via-slate-900 to-slate-950 relative overflow-hidden">
       {/* Decorative background */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-teal-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
 
       <div className="max-w-6xl mx-auto relative z-10">
         <motion.div
@@ -47,19 +47,19 @@ export function Projects() {
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
             viewport={{ once: true }}
-            className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full mb-6 border border-purple-200"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-emerald-900/50 to-teal-900/50 rounded-full mb-6 border border-emerald-500/30"
           >
-            <Sparkles className="w-4 h-4 text-purple-600" />
-            <span className="text-sm font-semibold text-purple-700">Portfolio Showcase</span>
+            <Sparkles className="w-4 h-4 text-emerald-400" />
+            <span className="text-sm font-semibold text-emerald-300">Portfolio Showcase</span>
           </motion.div>
 
           <h2 className="text-4xl md:text-5xl mb-4 font-bold tracking-tight">
-            <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 bg-clip-text text-transparent">
               Featured Projects
             </span>
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 mx-auto mb-4 rounded-full shadow-lg shadow-purple-500/30"></div>
-          <p className="text-slate-600 max-w-2xl mx-auto text-lg">
+          <div className="w-20 h-1 bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 mx-auto mb-4 rounded-full shadow-lg shadow-emerald-500/30"></div>
+          <p className="text-gray-300 max-w-2xl mx-auto text-lg">
             A selection of projects showcasing development skills and creativity
           </p>
         </motion.div>
@@ -76,10 +76,10 @@ export function Projects() {
               className="group relative"
             >
               {/* Glow effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-3xl blur-xl opacity-0 group-hover:opacity-30 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 rounded-3xl blur-xl opacity-0 group-hover:opacity-30 transition-opacity duration-500"></div>
 
-              <div className="relative bg-white rounded-3xl overflow-hidden border-2 border-purple-100 hover:border-purple-200 shadow-xl hover:shadow-2xl transition-all duration-500">
-                <div className="relative overflow-hidden aspect-video bg-gradient-to-br from-blue-100 to-purple-100">
+              <div className="relative bg-slate-800/50 backdrop-blur-sm rounded-3xl overflow-hidden border-2 border-emerald-500/20 hover:border-emerald-400/40 shadow-xl hover:shadow-2xl transition-all duration-500">
+                <div className="relative overflow-hidden aspect-video bg-gradient-to-br from-emerald-900/30 to-teal-900/30">
                   <img
                     src={project.image}
                     alt={project.title}
@@ -102,7 +102,7 @@ export function Projects() {
                         href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex-1 px-4 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl text-sm font-bold hover:from-indigo-700 hover:to-purple-700 transition-all flex items-center justify-center gap-2 shadow-lg"
+                        className="flex-1 px-4 py-2.5 bg-gradient-to-r from-emerald-500 to-teal-500 text-white rounded-xl text-sm font-bold hover:from-emerald-600 hover:to-teal-600 transition-all flex items-center justify-center gap-2 shadow-lg"
                       >
                         <Github className="w-4 h-4" />
                         Code
@@ -111,17 +111,17 @@ export function Projects() {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl mb-3 text-slate-900 font-bold group-hover:text-purple-600 transition-colors">
+                  <h3 className="text-xl mb-3 text-gray-100 font-bold group-hover:text-emerald-400 transition-colors">
                     {project.title}
                   </h3>
-                  <p className="text-slate-600 mb-4 text-sm leading-relaxed">
+                  <p className="text-gray-400 mb-4 text-sm leading-relaxed">
                     {project.description}
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {project.tags.map((tag, tagIndex) => (
                       <span
                         key={tagIndex}
-                        className="px-3 py-1.5 text-xs font-semibold bg-gradient-to-r from-blue-100 to-purple-100 text-purple-700 rounded-full border border-purple-200 hover:border-purple-300 transition-colors"
+                        className="px-3 py-1.5 text-xs font-semibold bg-gradient-to-r from-emerald-900/50 to-teal-900/50 text-emerald-300 rounded-full border border-emerald-500/30 hover:border-emerald-400/50 transition-colors"
                       >
                         {tag}
                       </span>
